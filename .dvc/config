@@ -1,18 +1,7 @@
-
-[Core]
-# Supported clouds: AWS, GCP
-Cloud = AWS
-
-# Log levels: Debug, Info, Warning and Error
-LogLevel = Info
-
-[AWS]
-CredentialPath = ~/.aws/credentials
-Profile = default
-
-StoragePath = dvc/tutorial
-
-[GCP]
-StoragePath = 
-ProjectName = 
-
+[core]
+    remote = storage
+['remote "storage"']
+    url = s3://mlops-dvc/
+    endpointurl = https://cap.dudaji.com:31729
+    access_key_id = mlops-dvc
+    secret_access_key = drOkm1yEZ0av7NLTrue3j9ePoIUe3DyRMQMHRnlR
